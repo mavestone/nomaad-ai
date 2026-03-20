@@ -386,7 +386,7 @@ export default function App() {
             <div className="u4" style={{ marginBottom: error ? 10 : 22 }}>
               <div style={{
                 background: "rgba(255,255,255,0.04)",
-                border: `1px solid ${focused ? "rgba(204,255,0,0.44)" : "rgba(204,255,0,0.1)"}`,
+                border: `1px solid ${focused ? "rgba(204,255,0,0.8)" : "rgba(204,255,0,0.3)"}`,
                 borderRadius: 14,
                 backdropFilter: "blur(24px)",
                 WebkitBackdropFilter: "blur(24px)",
@@ -396,7 +396,7 @@ export default function App() {
                 gap: 8,
                 transition: "border-color 0.2s, box-shadow 0.2s",
                 boxShadow: focused
-                  ? "0 0 0 3px rgba(204,255,0,0.05), 0 16px 48px rgba(0,0,0,0.45)"
+                  ? "0 0 0 3px rgba(204,255,0,0.08), 0 16px 48px rgba(0,0,0,0.45)"
                   : "0 12px 40px rgba(0,0,0,0.3)",
               }}>
                 <input
@@ -439,6 +439,8 @@ export default function App() {
                     flexShrink: 0,
                     lineHeight: 1,
                     minWidth: 106,
+                    boxShadow: "0 0 20px rgba(204,255,0,0.25)",
+                    isolation: "isolate",
                   }}
                 >
                   {loading ? "..." : "Join waitlist"}
